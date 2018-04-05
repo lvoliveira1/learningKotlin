@@ -2,7 +2,7 @@
 // Title = String
 // Numbers = Integer
 
-class Student {
+class Book {
     val title: String
     val author: String
     private val pages: Int
@@ -15,6 +15,10 @@ class Student {
     }
     fun getDetails(): String {
         return  "Title: $title, Author: $author, Pages: $pages"
+    }
+
+    override fun toString(): String {
+        return "Student(title='$title', author='$author', pages=$pages, price=$price)"
     }
 
 }
